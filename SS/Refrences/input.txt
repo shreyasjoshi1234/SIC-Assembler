@@ -1,0 +1,14 @@
+Copy START 2000
+LDX zero
+Copystr LDCH Str1,X
+STCH Str2,X
+one RESB 1000
+TIX Count
+JLT CopyStr
+zero WORD 0
+Str1 BYTE c'BVB_CET'
+Str2 RESB 4096
+Str3 BYTE x'A1B2C3'
+temp RESW 10
+Count WORD 7
+End
